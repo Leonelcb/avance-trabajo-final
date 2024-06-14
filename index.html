@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El hombre aventurero y el tesoro misterioso</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Gotham Rounded, sans-serif;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background-color: #333;
+      background-image: url('https://tse3.mm.bing.net/th?id=OIG1.37rLQ94Nbm6kSL7PA.gL&pid=ImgGn');
+      background-size: cover;
+    }
+
+    h1 {
+      color: limegreen;
+      text-align: center;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 800px;
+      max-width: 80%;
+      margin: 20px auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    #text {
+      color: limegreen;
+      margin: 20px 0;
+    }
+
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: hsl(200, 100%, 50%);
+      border: 1px solid hsl(200, 100%, 30%);
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: white;
+      outline: none;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      border-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>El hombre aventurero y el tesoro misterioso</h1>
+    <button id="start-btn" class="btn">Comenzar Juego</button>
+    <div id="game-container" style="display: none;">
+      <div id="text"></div>
+      <div id="option-buttons" class="btn-grid"></div>
+    </div>
+  </div>
+  <script defer src="game.js"></script>
+</body>
+</html>
